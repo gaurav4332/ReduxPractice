@@ -37,9 +37,12 @@
 //import liraries
 import React, { useEffect, useState } from 'react';
 import { FlatList, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-// import actions from '../redux/actions';
 import ButtonComp from "@components/ButtonComp";
 import actions from '../../redux/actions';
+import store from "@redux/store";
+import { saveUserData } from '../../redux/reducers/auth';
+const {dispatch} = store;
+
 
 
 // create a component

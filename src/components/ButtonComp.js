@@ -9,7 +9,6 @@ const ButtonComp = ({
   textStyle = {},
   onClick = () => {},
 }) => {
-  console.log(btnStyle);
   return (
     <TouchableOpacity
       style={[styles.main, {...btnStyle}]}
